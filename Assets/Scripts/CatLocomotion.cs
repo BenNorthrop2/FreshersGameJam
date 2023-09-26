@@ -27,8 +27,6 @@ public class CatLocomotion : MonoBehaviour
         HandleInput();
         HandleMovement();
 
-        Debug.Log(IsGrounded());
-
     }
 
 
@@ -50,7 +48,7 @@ public class CatLocomotion : MonoBehaviour
     private void HandleMovement()
     {
         Vector3 moveDirection = new Vector3(x , 0, 0);
-        
+
         Debug.Log(moveDirection);
 
         catController.Move(moveDirection * Time.deltaTime * moveSpeed);
